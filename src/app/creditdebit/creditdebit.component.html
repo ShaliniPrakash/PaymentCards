@@ -1,0 +1,38 @@
+<div class="resp-tabs-container">
+    <!-- <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0"> -->
+        <div class="payment-info">
+            
+            <h3 class="pay-title">Card Information</h3>
+            <form>
+                <div class="tab-for">
+                    <h5>NAME ON CARD</h5>
+                    <input type="text" id="pin" maxlength="30" value="FIRSTNAME LASTNAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'FIRSTNAME MIDDLENAME LASTNAME';}" pattern="\d{20}" required/>
+                    <h5>CARD NUMBER</h5>
+                    <input type="text" name="pincode" maxlength="16" value="XXXX-XXXX-XXXX-XXXX" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'XXXX-XXXX-XXXX-XXXX';}" pattern="\d{16}" required/>
+                </div>	
+                <div class="transaction">
+                    <div class="tab-form-left user-form">
+                        <h5>EXPIRY DATE</h5>
+                            <ul>
+                                <li>
+                                    <input type="number" class="text_box" typeof="text" value="11" min="01" max="12" pattern="\d{ }" required/>	
+                                </li>
+                                <li>
+                                    <input type="number" class="text_box" typeof="text" value="2019" min="2019" pattern="\d{ }" required/>	
+                                </li>
+                                
+                            </ul>
+                    </div>
+                    <div class="tab-form-right user-form-rt">
+                        <h5>CVV</h5>													
+                        <input type="text" name="pincode" maxlength="3" value="xxx" 
+                               onfocus="this.value = '';" onblur="if (this.value == '') {
+                          this.value = 'xxx'};  { this.value = Text }" pattern="\d{3}"  required/>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+        </div>
+    
